@@ -49,7 +49,7 @@ def plot_riemann_midpoint(N):
     right_I = np.sum(h * f_node[1:])
 
     # Create the nodes for midpoint rule
-    x_node = np.linspace(a + 0.5*h, b, N)
+    x_node = np.linspace(a + 0.5*h, b -0.5*h, N)
     f_node = f(x_node)
 
     # Plot the rectangles
